@@ -21,8 +21,10 @@ export const useGetMyRestaurant = () => {
     if (!response.ok) {
       throw new Error("Failed to get restaurant");
     }
+    
     return response.json();
-  };
+  
+  }
 
   const { data: restaurant, isLoading } = useQuery(
     "fetchMyRestaurant",
