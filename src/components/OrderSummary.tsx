@@ -47,14 +47,14 @@ const OrderSummary = ({ restaurant, cartItems, removeFromCart }: Props) => {
                 size={20}
                 onClick={() => removeFromCart(item)}
               />
-              ₹{((item.price * item.quantity) / 100).toFixed(2)}
+              ₹{((item.price * item.quantity) / 100)}
             </span>
           </div>
         ))}
         <Separator />
         <div className="flex justify-between">
           <span>Delivery</span>
-          <span>₹{(restaurant.deliveryPrice / 100).toFixed(2)}</span>
+          <span>₹{(restaurant.deliveryPrice / 100)}</span>
         </div>
         <Separator />
       </CardContent>
