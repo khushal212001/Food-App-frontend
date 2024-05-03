@@ -1,7 +1,7 @@
 import { AppStoreButton } from "react-mobile-app-button";
     
 export const DownloadAppleButton = () => {
-  const APKUrl = "https://play.google.com/store/apps/details?id=host";
+  const APKUrl = "https://www.apple.com/app-store/";
 
   return (
     <div>
@@ -10,6 +10,7 @@ export const DownloadAppleButton = () => {
         theme={"light"}
         className={"custom-style bg-white text-black"}
       />
+
     </div>
   );
 };

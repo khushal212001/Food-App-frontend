@@ -3,6 +3,7 @@ import SearchBar, { SearchForm } from "@/components/SearchBar";
 import { useNavigate } from "react-router-dom";
 import { DownloadGoogleButton } from "@/components/DownloadGoogleButton";
 import { DownloadAppleButton } from "@/components/DownloadAppleButton";
+import { DownloadAppGalleryButton } from "@/components/DownloadAppGalleryButton";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -38,6 +39,7 @@ const HomePage = () => {
           <div className="flex flex-row items-center justify bg-center gap-4 py-2">
             <DownloadGoogleButton/>
             <DownloadAppleButton/>
+            <DownloadAppGalleryButton/>
           </div>
         </div>
       </div>

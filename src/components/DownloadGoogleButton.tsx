@@ -1,7 +1,7 @@
 import { GooglePlayButton } from "react-mobile-app-button";
     
 export const DownloadGoogleButton = () => {
-  const APKUrl = "https://play.google.com/store/apps/details?id=host";
+  const APKUrl = "https://play.google.com/store/games?device=windows";
 
   return (
     <div>
