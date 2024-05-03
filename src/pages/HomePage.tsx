@@ -1,7 +1,8 @@
 import landingImage from "../assets/landing.png";
-import appDownloadImage from "../assets/appDownload.png";
 import SearchBar, { SearchForm } from "@/components/SearchBar";
 import { useNavigate } from "react-router-dom";
+import { DownloadGoogleButton } from "@/components/DownloadGoogleButton";
+import { DownloadAppleButton } from "@/components/DownloadAppleButton";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -14,8 +15,8 @@ const HomePage = () => {
 
   return (
     <div className="flex flex-col gap-12">
-      <div className="md:px-32 bg-white rounded-lg shadow-md py-8 flex flex-col gap-5 text-center -mt-16">
-        <h1 className="text-5xl font-bold tracking-tight text-orange-600">
+      <div className=" md:px-32 bg-black text-amber-400 rounded-lg shadow-md py-8 flex flex-col gap-5 text-center -mt-16">
+        <h1 className="text-5xl font-bold tracking-tight text-amber-400">
           Tuck into a takeway today
         </h1>
         <span className="text-xl">Food is just a click away!</span>
@@ -24,7 +25,7 @@ const HomePage = () => {
           onSubmit={handleSearchSubmit}
         />
       </div>
-      <div className="grid md:grid-cols-2 gap-5">
+      <div className="grid text-amber-400 md:grid-cols-2 gap-5">
         <img src={landingImage} />
         <div className="flex flex-col items-center justify-center gap-4 text-center">
           <span className="font-bold text-3xl tracking-tighter">
@@ -34,7 +35,10 @@ const HomePage = () => {
             Download the MernEats App for faster ordering and personalised
             recommendations
           </span>
-          <img src={appDownloadImage} />
+          <div className="flex flex-row items-center justify bg-center gap-4 py-2">
+            <DownloadGoogleButton/>
+            <DownloadAppleButton/>
+          </div>
         </div>
       </div>
     </div>

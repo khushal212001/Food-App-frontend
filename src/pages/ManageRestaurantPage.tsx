@@ -21,13 +21,13 @@ const ManageRestaurantPage = () => {
 
   return (
     <Tabs defaultValue="orders">
-      <TabsList>
+      <TabsList className="text-amber-700 bg-slate-800">
         <TabsTrigger value="orders">Orders</TabsTrigger>
         <TabsTrigger value="manage-restaurant">Manage Restaurant</TabsTrigger>
       </TabsList>
       <TabsContent
         value="orders"
-        className="space-y-5 bg-gray-50 p-10 rounded-lg"
+        className="space-y-5 bg-stone-800 text-amber-400 p-10 rounded-lg"
       >
         <h2 className="text-2xl font-bold">{orders?.length} active orders</h2>
         {orders?.map((order) => (

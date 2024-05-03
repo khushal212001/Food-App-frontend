@@ -14,8 +14,8 @@ const MenuSection = () => {
   return (
     <div className="space-y-2">
       <div>
-        <h2 className="text-2xl font-bold">Menu</h2>
-        <FormDescription>
+        <h2 className="text-2xl text-amber-400 font-bold">Menu</h2>
+        <FormDescription className="text-amber-300">
           Create your menu and give each item a name and a price
         </FormDescription>
       </div>
@@ -23,7 +23,7 @@ const MenuSection = () => {
         control={control}
         name="menuItems"
         render={() => (
-          <FormItem className="flex flex-col gap-2">
+          <FormItem className="flex flex-col gap-2 text-amber-400">
             {fields.map((_, index) => (
               <MenuItemInput
                 index={index}
@@ -33,7 +33,7 @@ const MenuSection = () => {
           </FormItem>
         )}
       />
-      <Button type="button" onClick={() => append({ name: "", price: "" })}>
+      <Button className="bg-amber-400 text-black" type="button" onClick={() => append({ name: "", price: "" }) }>
         Add Menu Item
       </Button>
     </div>

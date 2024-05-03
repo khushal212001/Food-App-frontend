@@ -46,9 +46,9 @@ const OrderItemCard = ({ order }: Props) => {
   };
 
   return (
-    <Card>
+    <Card className="bg-stone-700 border-none">
       <CardHeader>
-        <CardTitle className="grid md:grid-cols-4 gap-4 justify-between mb-3">
+        <CardTitle className="grid md:grid-cols-4 text-amber-400 gap-4 justify-between mb-3">
           <div>
             Customer Name:
             <span className="ml-2 font-normal">
@@ -74,11 +74,11 @@ const OrderItemCard = ({ order }: Props) => {
         </CardTitle>
         <Separator />
       </CardHeader>
-      <CardContent className="flex flex-col gap-6">
+      <CardContent className="flex text-amber-400 flex-col gap-6">
         <div className="flex flex-col gap-2">
           {order.cartItems.map((cartItem) => (
             <span>
-              <Badge variant="outline" className="mr-2">
+              <Badge variant="outline" className="text-amber-400 mr-2 border-amber-300">
                 {cartItem.quantity}
               </Badge>
               {cartItem.name}
@@ -92,10 +92,10 @@ const OrderItemCard = ({ order }: Props) => {
             disabled={isLoading}
             onValueChange={(value) => handleStatusChange(value as OrderStatus)}
           >
-            <SelectTrigger id="status">
+            <SelectTrigger id="status" className="border-amber-300">
               <SelectValue placeholder="Status" />
             </SelectTrigger>
-            <SelectContent position="popper">
+            <SelectContent position="popper" className="bg-stone-800 text-amber-400">
               {ORDER_STATUS.map((status) => (
                 <SelectItem value={status.value}>{status.label}</SelectItem>
               ))}

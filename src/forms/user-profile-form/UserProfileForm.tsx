@@ -54,11 +54,11 @@ const UserProfileForm = ({
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSave)}
-        className="space-y-4 bg-gray-50 rounded-lg md:p-10"
+        className="space-y-4 text-amber-400 bg-stone-800 rounded-lg md:p-10"
       >
         <div>
           <h2 className="text-2xl font-bold">{title}</h2>
-          <FormDescription>
+          <FormDescription className="text-amber-400">
             View and change your profile information here
           </FormDescription>
         </div>
@@ -69,7 +69,7 @@ const UserProfileForm = ({
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input {...field} disabled className="bg-white" />
+                <Input {...field} disabled className="bg-gray-50" />
               </FormControl>
             </FormItem>
           )}
@@ -82,7 +82,7 @@ const UserProfileForm = ({
             <FormItem>
               <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input {...field} className="bg-white" />
+                <Input {...field} className="bg-gray-50" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -97,7 +97,7 @@ const UserProfileForm = ({
               <FormItem className="flex-1">
                 <FormLabel>Address Line 1</FormLabel>
                 <FormControl>
-                  <Input {...field} className="bg-white" />
+                  <Input {...field} className="bg-gray-50" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -110,7 +110,7 @@ const UserProfileForm = ({
               <FormItem className="flex-1">
                 <FormLabel>City</FormLabel>
                 <FormControl>
-                  <Input {...field} className="bg-white" />
+                  <Input {...field} className="bg-gray-50" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -123,7 +123,7 @@ const UserProfileForm = ({
               <FormItem className="flex-1">
                 <FormLabel>Country</FormLabel>
                 <FormControl>
-                  <Input {...field} className="bg-white" />
+                  <Input {...field} className="bg-gray-50" />
                 </FormControl>
                 <FormMessage />
               </FormItem>

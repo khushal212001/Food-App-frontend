@@ -20,10 +20,10 @@ const PaginationSelector = ({ page, pages, onPageChange }: Props) => {
   }
 
   return (
-    <Pagination>
-      <PaginationContent>
+    <Pagination className="bg-stone-800">
+      <PaginationContent className="bg-stone-800">
         {page !== 1 && (
-          <PaginationItem>
+          <PaginationItem className="bg-stone-800" >
             <PaginationPrevious
               href="#"
               onClick={() => onPageChange(page - 1)}
@@ -32,7 +32,7 @@ const PaginationSelector = ({ page, pages, onPageChange }: Props) => {
         )}
 
         {pageNumbers.map((number) => (
-          <PaginationItem>
+          <PaginationItem className="bg-stone-800" >
             <PaginationLink
               href="#"
               onClick={() => onPageChange(number)}
@@ -44,8 +44,8 @@ const PaginationSelector = ({ page, pages, onPageChange }: Props) => {
         ))}
 
         {page !== pageNumbers.length && (
-          <PaginationItem>
-            <PaginationNext href="#" onClick={() => onPageChange(page + 1)} />
+          <PaginationItem className="bg-stone-800">
+            <PaginationNext href="#" onClick={() => onPageChange(page + 1)} className="bg-stone-800" />
           </PaginationItem>
         )}
       </PaginationContent>

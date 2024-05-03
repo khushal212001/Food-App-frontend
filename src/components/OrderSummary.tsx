@@ -25,17 +25,17 @@ const OrderSummary = ({ restaurant, cartItems, removeFromCart }: Props) => {
 
   return (
     <>
-      <CardHeader>
+      <CardHeader className="bg-stone-700 text-amber-400 rounded-2xl">
         <CardTitle className="text-2xl font-bold tracking-tight flex justify-between">
           <span>Your Order</span>
-          <span>₹{getTotalCost()}</span>
+          <span>₹{getTotalCost()/100}</span>
         </CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-5">
+      <CardContent className="flex bg-stone-700 text-amber-400 flex-col gap-5">
         {cartItems.map((item) => (
           <div className="flex justify-between">
             <span>
-              <Badge variant="outline" className="mr-2">
+              <Badge variant="outline" className="mr-2 text-amber-400  border-amber-300">
                 {item.quantity}
               </Badge>
               {item.name}
@@ -47,14 +47,14 @@ const OrderSummary = ({ restaurant, cartItems, removeFromCart }: Props) => {
                 size={20}
                 onClick={() => removeFromCart(item)}
               />
-              ₹{((item.price * item.quantity))}
+              ₹{((item.price * item.quantity)/100)}
             </span>
           </div>
         ))}
         <Separator />
         <div className="flex justify-between">
           <span>Delivery</span>
-          <span>₹{(restaurant.deliveryPrice)}</span>
+          <span>₹{(restaurant.deliveryPrice/100)}</span>
         </div>
         <Separator />
       </CardContent>

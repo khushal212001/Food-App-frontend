@@ -17,13 +17,13 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <Menu className="text-orange-500" />
+        <Menu className="bg-black text-amber-400" />
       </SheetTrigger>
       <SheetContent className="space-y-3">
         <SheetTitle>
           {isAuthenticated ? (
-            <span className="flex items-center font-bold gap-2">
-              <CircleUserRound className="text-orange-500" />
+            <span className="flex bg-black items-center font-bold gap-2">
+              <CircleUserRound className="text-amber-400" />
               {user?.email}
             </span>
           ) : (
@@ -31,13 +31,13 @@ const MobileNav = () => {
           )}
         </SheetTitle>
         <Separator />
-        <SheetDescription className="flex flex-col gap-4">
+        <SheetDescription className="flex bg-black flex-col gap-4">
           {isAuthenticated ? (
             <MobileNavLinks />
           ) : (
             <Button
               onClick={() => loginWithRedirect()}
-              className="flex-1 font-bold bg-orange-500"
+              className="flex-1 bg-black font-bold text-amber-400"
             >
               Log In
             </Button>

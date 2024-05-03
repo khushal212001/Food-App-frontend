@@ -14,22 +14,22 @@ const UsernameMenu = () => {
   const { user, logout } = useAuth0();
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger className="flex items-center px-3 font-bold hover:text-orange-500 gap-2">
-        <CircleUserRound className="text-orange-500" />
+    <DropdownMenu >
+      <DropdownMenuTrigger className="flex bg-black items-center px-3 font-bold hover:text-orange-500 gap-2">
+        <CircleUserRound className="text-amber-400" />
         {user?.email}
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="bg-stone-800">
         <DropdownMenuItem>
           <Link
             to="/manage-restaurant"
-            className="font-bold hover:text-orange-500"
+            className="font-bold text-amber-400  hover:text-orange-500"
           >
             Manage Restaurant
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link to="/user-profile" className="font-bold hover:text-orange-500">
+          <Link to="/user-profile" className="font-bold text-amber-400 hover:text-orange-500">
             User Profile
           </Link>
         </DropdownMenuItem>
