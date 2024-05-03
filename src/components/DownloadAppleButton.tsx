@@ -9,6 +9,7 @@ export const DownloadAppleButton = () => {
         url={APKUrl}
         theme={"light"}
         className={"custom-style bg-white text-black"}
+        height={60} width={170}
       />
 
     </div>

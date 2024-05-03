@@ -9,6 +9,7 @@ export const DownloadGoogleButton = () => {
         url={APKUrl}
         theme={"light"}
         className={"custom-style bg-white text-black"}
+        height={60} width={180}
       />
     </div>
   );
