@@ -20,7 +20,7 @@ const OrderSummary = ({ restaurant, cartItems, removeFromCart }: Props) => {
 
     const totalWithDelivery = totalInPence + restaurant.deliveryPrice;
 
-    return totalWithDelivery.toFixed(2);
+    return totalWithDelivery;
   };
 
   return (
