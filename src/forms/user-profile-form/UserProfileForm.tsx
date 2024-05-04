@@ -69,7 +69,7 @@ const UserProfileForm = ({
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input {...field} disabled className="bg-gray-50" />
+                <Input {...field} disabled className="bg-gray-50 text-black" />
               </FormControl>
             </FormItem>
           )}
@@ -82,7 +82,7 @@ const UserProfileForm = ({
             <FormItem>
               <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input {...field} className="bg-gray-50" />
+                <Input {...field} className="bg-gray-50 text-black" />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -97,7 +97,7 @@ const UserProfileForm = ({
               <FormItem className="flex-1">
                 <FormLabel>Address Line 1</FormLabel>
                 <FormControl>
-                  <Input {...field} className="bg-gray-50" />
+                  <Input {...field} className="bg-gray-50 text-black" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -110,7 +110,7 @@ const UserProfileForm = ({
               <FormItem className="flex-1">
                 <FormLabel>City</FormLabel>
                 <FormControl>
-                  <Input {...field} className="bg-gray-50" />
+                  <Input {...field} className="bg-gray-50 text-black" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -123,7 +123,7 @@ const UserProfileForm = ({
               <FormItem className="flex-1">
                 <FormLabel>Country</FormLabel>
                 <FormControl>
-                  <Input {...field} className="bg-gray-50" />
+                  <Input {...field} className="bg-gray-50 text-black" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
