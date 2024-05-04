@@ -28,7 +28,7 @@ const OrderSummary = ({ restaurant, cartItems, removeFromCart }: Props) => {
       <CardHeader className="bg-stone-700 text-amber-400 rounded-2xl">
         <CardTitle className="text-2xl font-bold tracking-tight flex justify-between">
           <span>Your Order</span>
-          <span>₹{getTotalCost()/100}</span>
+          <span>₹{getTotalCost()}</span>
         </CardTitle>
       </CardHeader>
       <CardContent className="flex bg-stone-700 text-amber-400 flex-col gap-5">
